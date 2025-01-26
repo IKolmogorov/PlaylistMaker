@@ -1,30 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".SettingsActivity">
 
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@color/settings_screen_bg_color"
         android:orientation="vertical"
-        android:paddingTop="@dimen/title_padding_size"
-        android:paddingLeft="@dimen/screen_padding_size"
-        android:paddingRight="@dimen/screen_padding_size"
-        android:paddingBottom="@dimen/from_content_to_bottom_padding_size">
+        android:paddingTop="@dimen/padding_top"
+        android:paddingHorizontal="@dimen/padding_horizontal"
+        android:paddingBottom="@dimen/padding_bottom">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@color/settings_screen_bg_color"
-            android:orientation="horizontal"
-            android:padding="0dp"
-            android:paddingBottom="@dimen/from_content_to_bottom_padding_size">
+            android:orientation="horizontal">
 
             <ImageView
                 android:id="@+id/return_image"
@@ -49,8 +44,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginTop="@dimen/from_title_to_content_padding_size"
-            android:layout_marginBottom="@dimen/from_content_to_bottom_padding_size"
+            android:layout_marginTop="@dimen/padding_from_header_to_content"
             android:orientation="vertical">
 
             <FrameLayout
