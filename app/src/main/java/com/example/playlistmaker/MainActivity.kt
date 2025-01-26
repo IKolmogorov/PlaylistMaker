@@ -35,8 +35,8 @@ class MainActivity : AppCompatActivity() {
             startActivity(displayIntent)
         }
 
-        val settings_button = findViewById<Button>(R.id.open_settings)
-        settings_button.setOnClickListener {
+        val settingsButton = findViewById<Button>(R.id.open_settings)
+        settingsButton.setOnClickListener {
             val displayIntent = Intent(this, SettingsActivity::class.java)
             startActivity(displayIntent)
         }
