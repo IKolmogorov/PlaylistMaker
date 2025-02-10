@@ -7,4 +7,13 @@
     <string name="share_title">Поделиться приложением</string>
     <string name="write_to_support_title">Написать в поддержку</string>
     <string name="user_agreement_title">Пользовательское соглашение</string>
+
+    <string name="share_body">Привет, Android-разработка — это круто!</string>
+
+    <string name="write_to_support_subject">Сообщение разработчикам приложения Playlist Maker</string>
+    <string name="write_to_support_body">Спасибо разработчикам за крутое приложение!</string>
+    <string name="support_email">ia.kolmogorov@yandex.ru</string>
+
+    <string name="user_agreement_url">https://yandex.ru/legal/practicum_offer/</string>
+
 </resources>

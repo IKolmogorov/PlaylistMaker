@@ -47,6 +47,7 @@
             </FrameLayout>
 
             <FrameLayout
+                android:id="@+id/shareFrameLayout"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/menu_item_height">
 
@@ -60,6 +61,7 @@
             </FrameLayout>
 
             <FrameLayout
+                android:id="@+id/writeToSupportFrameLayout"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/menu_item_height">
 
@@ -73,6 +75,7 @@
             </FrameLayout>
 
             <FrameLayout
+                android:id="@+id/userAgreementFrameLayout"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/menu_item_height">
 

@@ -1,8 +1,10 @@
 package com.example.playlistmaker
 
 import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
 import android.widget.Button
+import android.widget.FrameLayout
 import android.widget.ImageView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -25,6 +27,34 @@ class SettingsActivity : AppCompatActivity() {
         returnImageView.setOnClickListener {
             val displayIntent = Intent(this, MainActivity::class.java)
             startActivity(displayIntent)
+        }
+
+        val shareFrameLayout = findViewById<FrameLayout>(R.id.shareFrameLayout)
+
+        shareFrameLayout.setOnClickListener {
+            val shareIntent = Intent(Intent.ACTION_SEND)
+            shareIntent.setType("text/plain")
+            shareIntent.putExtra(Intent.EXTRA_TEXT, getString(R.string.share_body))
+            startActivity(shareIntent)
+        }
+
+        val writeToSupportFrameLayout = findViewById<FrameLayout>(R.id.writeToSupportFrameLayout)
+
+        writeToSupportFrameLayout.setOnClickListener {
+            val shareIntent = Intent(Intent.ACTION_SENDTO)
+            shareIntent.data = Uri.parse("mailto:")
+            shareIntent.putExtra(Intent.EXTRA_EMAIL, arrayOf(getString(R.string.support_email)))
+            shareIntent.putExtra(Intent.EXTRA_SUBJECT, getString(R.string.write_to_support_subject))
+            shareIntent.putExtra(Intent.EXTRA_TEXT, getString(R.string.write_to_support_body))
+            startActivity(shareIntent)
+        }
+
+        val userAgreementFrameLayout = findViewById<FrameLayout>(R.id.userAgreementFrameLayout)
+
+        userAgreementFrameLayout.setOnClickListener {
+            val shareIntent = Intent(Intent.ACTION_VIEW)
+            shareIntent.data = Uri.parse(getString(R.string.user_agreement_url))
+            startActivity(shareIntent)
         }
     }
 }
