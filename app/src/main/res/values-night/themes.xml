@@ -17,4 +17,13 @@
 
         <!-- Customize your theme here. -->
     </style>
+
+    <style name="Theme.PlaylistMaker.Icons">
+        <item name="colorPrimary">@color/white</item>
+    </style>
+
+    <style name="Theme.PlaylistMaker.Switchers">
+        <item name="colorPrimary">@color/blue</item>
+        <item name="colorPrimaryVariant">@color/blue_light</item>
+    </style>
 </resources>

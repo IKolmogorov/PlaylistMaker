@@ -40,9 +40,6 @@
 
     <!-- Button styles-->
     <style name="MainScreenButtonStyle" parent="Widget.MaterialComponents.Button.UnelevatedButton">
-        <!--<item name="android:stateListAnimator">@animator/mtrl_btn_unelevated_state_list_anim</item>
-        <item name="android:stateListAnimator">@null</item>
-        <item name="elevation">0dp</item>-->
 
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">0dp</item>
@@ -67,6 +64,7 @@
 
     <!-- ImageView styles-->
     <style name="ArrowBackImageViewStyle">
+        <item name="tint">?attr/colorOnPrimary</item>
         <item name="android:layout_width">@dimen/small_icon_size</item>
         <item name="android:layout_height">match_parent</item>
         <item name="android:foreground">?attr/selectableItemBackground</item>
@@ -74,8 +72,19 @@
     </style>
 
     <style name="MenuItemIconImageViewStyle">
+        <item name="android:theme">@style/Theme.PlaylistMaker.Icons</item>
+        <item name="tint">?attr/colorPrimary</item>
         <item name="android:layout_width">@dimen/small_icon_size</item>
         <item name="android:layout_height">match_parent</item>
         <item name="android:layout_gravity">end</item>
+    </style>
+
+    <style name="SwitchStyle">
+        <item name="android:theme">@style/Theme.PlaylistMaker.Switchers</item>
+        <item name="android:layout_width">@dimen/small_icon_size</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_gravity">end</item>
+        <item name="android:thumbTint">?attr/colorPrimary</item>
+        <item name="android:trackTint">?attr/colorPrimaryVariant</item>
     </style>
 </resources>

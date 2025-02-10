@@ -40,10 +40,10 @@
                     style="@style/MenuItemTextViewStyle"
                     android:text="@string/dark_theme_title"/>
 
-                <ImageView
-                    style="@style/MenuItemIconImageViewStyle"
-                    android:layout_width="@dimen/big_icon_size"
-                    android:src="@drawable/switcher_off" />
+                <Switch
+                    android:id="@+id/theme_switch"
+                    style="@style/SwitchStyle"
+                    android:layout_width="@dimen/big_icon_size" />
             </FrameLayout>
 
             <FrameLayout
