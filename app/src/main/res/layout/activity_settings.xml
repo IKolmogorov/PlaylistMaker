@@ -7,37 +7,22 @@
     tools:context=".SettingsActivity">
 
     <LinearLayout
+        style="@style/MainLinearLayoutStyle"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@color/settings_screen_bg_color"
-        android:orientation="vertical"
-        android:paddingTop="@dimen/padding_top"
-        android:paddingHorizontal="@dimen/padding_horizontal"
-        android:paddingBottom="@dimen/padding_bottom">
+        android:layout_height="match_parent">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/settings_screen_bg_color"
             android:orientation="horizontal">
 
             <ImageView
-                android:id="@+id/return_image"
-                android:layout_width="@dimen/small_icon_size"
-                android:layout_height="match_parent"
-                android:foreground="?attr/selectableItemBackground"
-                android:src="@drawable/arrow_back" />
-
+                style="@style/ArrowBackImageViewStyle"
+                android:id="@+id/return_image"/>
 
             <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="start"
-                android:layout_marginStart="@dimen/small_icon_size"
-                android:gravity="start"
-                android:text="@string/settings_title"
-                android:textColor="@color/screen_title_color"
-                android:textSize="@dimen/screen_title_text_size" />
+                style="@style/HeaderTextViewStyle"
+                android:text="@string/settings_title"/>
 
         </LinearLayout>
 
@@ -52,18 +37,12 @@
                 android:layout_height="@dimen/menu_item_height">
 
                 <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_gravity="start"
-                    android:gravity="center_vertical"
-                    android:text="@string/dark_theme_title"
-                    android:textColor="@color/screen_title_color"
-                    android:textSize="@dimen/menu_item_title_text_size" />
+                    style="@style/MenuItemTextViewStyle"
+                    android:text="@string/dark_theme_title"/>
 
                 <ImageView
+                    style="@style/MenuItemIconImageViewStyle"
                     android:layout_width="@dimen/big_icon_size"
-                    android:layout_height="match_parent"
-                    android:layout_gravity="end"
                     android:src="@drawable/switcher_off" />
             </FrameLayout>
 
@@ -72,18 +51,11 @@
                 android:layout_height="@dimen/menu_item_height">
 
                 <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_gravity="start"
-                    android:gravity="center_vertical"
-                    android:text="@string/share_title"
-                    android:textColor="@color/screen_title_color"
-                    android:textSize="@dimen/menu_item_title_text_size" />
+                    style="@style/MenuItemTextViewStyle"
+                    android:text="@string/share_title"/>
 
                 <ImageView
-                    android:layout_width="@dimen/small_icon_size"
-                    android:layout_height="match_parent"
-                    android:layout_gravity="end"
+                    style="@style/MenuItemIconImageViewStyle"
                     android:src="@drawable/share" />
             </FrameLayout>
 
@@ -92,18 +64,11 @@
                 android:layout_height="@dimen/menu_item_height">
 
                 <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_gravity="start"
-                    android:gravity="center_vertical"
-                    android:text="@string/write_to_support_title"
-                    android:textColor="@color/screen_title_color"
-                    android:textSize="@dimen/menu_item_title_text_size" />
+                    style="@style/MenuItemTextViewStyle"
+                    android:text="@string/write_to_support_title"/>
 
                 <ImageView
-                    android:layout_width="@dimen/small_icon_size"
-                    android:layout_height="match_parent"
-                    android:layout_gravity="end"
+                    style="@style/MenuItemIconImageViewStyle"
                     android:src="@drawable/support" />
             </FrameLayout>
 
@@ -112,18 +77,11 @@
                 android:layout_height="@dimen/menu_item_height">
 
                 <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_gravity="start"
-                    android:gravity="center_vertical"
-                    android:text="@string/user_agreement_title"
-                    android:textColor="@color/screen_title_color"
-                    android:textSize="@dimen/menu_item_title_text_size" />
+                    style="@style/MenuItemTextViewStyle"
+                    android:text="@string/user_agreement_title"/>
 
                 <ImageView
-                    android:layout_width="@dimen/small_icon_size"
-                    android:layout_height="match_parent"
-                    android:layout_gravity="end"
+                    style="@style/MenuItemIconImageViewStyle"
                     android:src="@drawable/arrow_forward" />
             </FrameLayout>
 

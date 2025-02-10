@@ -5,6 +5,10 @@
     <dimen name="button_title_text_size">22sp</dimen>
     <dimen name="menu_item_title_text_size">16sp</dimen>
 
+    <!-- FONT WEIGHT -->
+    <dimen name="header_font_weight">500</dimen>
+    <dimen name="menu_item_font_weight">400</dimen>
+
     <!-- PADDING SIZE -->
     <dimen name="padding_top">14dp</dimen>
     <dimen name="padding_horizontal">16dp</dimen>

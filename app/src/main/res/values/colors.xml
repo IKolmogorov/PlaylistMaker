@@ -2,11 +2,11 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="main_screen_bg_color">#3772E7</color>
-    <color name="settings_screen_bg_color">#FFFFFFFF</color>
+    <color name="blue">#3772E7</color>
+   <!-- <color name="settings_screen_bg_color">#FFFFFFFF</color>
     <color name="main_screen_title_color">#FFFFFFFF</color>
     <color name="screen_title_color">#FF000000</color>
     <color name="button_title_color">#FF000000</color>
-    <color name="button_bg_color">#FFFFFFFF</color>
+    <color name="button_bg_color">#FFFFFFFF</color> -->
 
 </resources>

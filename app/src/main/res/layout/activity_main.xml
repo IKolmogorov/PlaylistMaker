@@ -8,31 +8,25 @@
     tools:context=".MainActivity">
 
     <LinearLayout
+        style="@style/MainLinearLayoutStyle"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/main_screen_bg_color"
-        android:orientation="vertical"
-        android:paddingTop="@dimen/padding_top"
-        android:paddingHorizontal="@dimen/padding_horizontal"
-        android:paddingBottom="@dimen/padding_bottom">
+        android:background="?attr/colorPrimaryVariant">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="0dp"
-            android:background="@color/main_screen_bg_color"
+            android:background="?attr/colorPrimaryVariant"
             android:orientation="horizontal">
 
             <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="start"
+                style="@style/HeaderTextViewStyle"
                 android:padding="0dp"
-                android:gravity="start"
                 android:insetTop = "0dp"
                 android:insetBottom = "0dp"
                 android:text="@string/app_name"
-                android:textColor="@color/main_screen_title_color"
+                android:textColor="?attr/colorSecondary"
                 android:textSize="@dimen/screen_title_text_size" />
 
         </LinearLayout>
@@ -45,63 +39,23 @@
 
             <Button
                 android:id="@+id/open_search"
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="1"
-                android:insetTop = "0dp"
-                android:insetBottom = "0dp"
-                app:backgroundTint="@color/button_bg_color"
-                android:text="@string/search_title"
-                android:textAllCaps="false"
-                android:textColor="@color/button_title_color"
-                android:textSize="@dimen/button_title_text_size"
-                android:foreground="?attr/selectableItemBackground"
+                style="@style/MainScreenButtonStyle"
                 android:layout_marginBottom="@dimen/padding_between_buttons"
-                app:icon="@drawable/icon_search"
-                app:iconGravity="textStart"
-                app:iconPadding="@dimen/padding_from_icon_to_button_title"
-                app:iconTint="@color/button_title_color"
-                app:cornerRadius="@dimen/button_corner_radius"/>
+                android:text="@string/search_title"
+                app:icon="@drawable/icon_search" />
 
             <Button
                 android:id="@+id/open_media_library"
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="1"
-                android:insetTop = "0dp"
-                android:insetBottom = "0dp"
-                app:backgroundTint="@color/button_bg_color"
                 android:text="@string/media_library_title"
-                android:textAllCaps="false"
-                android:textColor="@color/button_title_color"
-                android:textSize="@dimen/button_title_text_size"
-                android:foreground="?attr/selectableItemBackground"
-                android:layout_marginBottom="@dimen/padding_between_buttons"
                 app:icon="@drawable/media_library"
-                app:iconGravity="textStart"
-                app:iconPadding="@dimen/padding_from_icon_to_button_title"
-                app:iconTint="@color/button_title_color"
-                app:cornerRadius="@dimen/button_corner_radius"/>
+                android:layout_marginBottom="@dimen/padding_between_buttons"
+                style="@style/MainScreenButtonStyle"/>
 
             <Button
                 android:id="@+id/open_settings"
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="1"
-                android:insetTop = "0dp"
-                android:insetBottom = "0dp"
-                app:backgroundTint="@color/button_bg_color"
                 android:text="@string/settings_title"
-                android:textAllCaps="false"
-                android:textColor="@color/button_title_color"
-                android:textSize="@dimen/button_title_text_size"
-                android:foreground="?attr/selectableItemBackground"
-
                 app:icon="@drawable/settings_icon"
-                app:iconGravity="textStart"
-                app:iconPadding="@dimen/padding_from_icon_to_button_title"
-                app:iconTint="@color/button_title_color"
-                app:cornerRadius="@dimen/button_corner_radius"/>
+                style="@style/MainScreenButtonStyle"/>
 
         </LinearLayout>
 
