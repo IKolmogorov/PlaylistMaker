@@ -18,6 +18,11 @@
     <dimen name="padding_from_icon_to_button_title">8dp</dimen>
     <dimen name="padding_between_buttons">16dp</dimen>
 
+    <dimen name="padding_small">4dp</dimen>
+
+    <!-- VIEW HEIGHT -->
+    <dimen name="header_layout_size">56dp</dimen>
+    <dimen name="header_layout_height">48dp</dimen>
 
 <!--    <dimen name="from_title_to_content_padding_size">24dp</dimen>-->
     <!--<dimen name="from_content_to_bottom_padding_size">28dp</dimen>-->
@@ -26,4 +31,10 @@
     <dimen name="big_icon_size">48dp</dimen>
     <dimen name="menu_item_height">61dp</dimen>
     <dimen name="editText_height">36dp</dimen>
+
+    <!-- HEADER SIZE -->
+    <dimen name="header_frame_padding">12dp</dimen>
+    <dimen name="header_frame_size">48dp</dimen>
+    <dimen name="header_text_padding_top">10dp</dimen>
+
 </resources>

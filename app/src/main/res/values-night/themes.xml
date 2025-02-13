@@ -26,4 +26,10 @@
         <item name="colorPrimary">@color/blue</item>
         <item name="colorPrimaryVariant">@color/blue_light</item>
     </style>
+
+    <style name="Theme.PlaylistMaker.SearchEditTexts">
+        <item name="colorPrimary">@color/white</item>
+        <item name="colorOnPrimary">@color/black</item>
+        <item name="background">@drawable/rounded_edittext_night</item>
+    </style>
 </resources>
