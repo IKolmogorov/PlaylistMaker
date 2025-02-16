@@ -1,32 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
+    android:id="@+id/media_library"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MediaLibraryActivity">
 
     <LinearLayout
-        style="@style/MainLinearLayoutStyle"
+        style="@style/otherActivityLinearLayoutStyle"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:padding="0dp">
+        <LinearLayout style="@style/HeaderLinearLayoutStyle">
 
-            <ImageView
-                style="@style/ArrowBackImageViewStyle"
-                android:id="@+id/return_image"/>
+            <FrameLayout
+                android:id="@+id/return_frame"
+                style="@style/HeaderImageFrameStyle">
 
-            <TextView
-                style="@style/HeaderTextViewStyle"
-                android:text="@string/media_library_title"/>
+                <ImageView style="@style/ArrowBackImageViewStyle" />
+
+            </FrameLayout>
+
+            <FrameLayout style="@style/HeaderFrameStyle">
+
+                <TextView
+                    style="@style/HeaderTextViewStyle"
+                    android:text="@string/media_library_title" />
+
+            </FrameLayout>
 
         </LinearLayout>
 
     </LinearLayout>
-
 </androidx.constraintlayout.widget.ConstraintLayout>

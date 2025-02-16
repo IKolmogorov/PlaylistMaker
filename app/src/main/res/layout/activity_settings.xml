@@ -1,40 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
+    android:id="@+id/settings"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".SettingsActivity">
 
     <LinearLayout
-        style="@style/MainLinearLayoutStyle"
+        style="@style/otherActivityLinearLayoutStyle"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
+        <LinearLayout style="@style/HeaderLinearLayoutStyle">
 
-            <ImageView
-                style="@style/ArrowBackImageViewStyle"
-                android:id="@+id/return_image"/>
+            <FrameLayout
+                android:id="@+id/return_frame"
+                style="@style/HeaderImageFrameStyle">
 
-            <TextView
-                style="@style/HeaderTextViewStyle"
-                android:text="@string/settings_title"/>
+                <ImageView
+                    android:id="@+id/return_image"
+                    style="@style/ArrowBackImageViewStyle" />
+
+            </FrameLayout>
+
+            <FrameLayout style="@style/HeaderFrameStyle">
+
+                <TextView
+                    style="@style/HeaderTextViewStyle"
+                    android:text="@string/settings_title" />
+
+            </FrameLayout>
 
         </LinearLayout>
 
         <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginTop="@dimen/padding_from_header_to_content"
-            android:orientation="vertical">
+            style="@style/MenuItemsLinearLayoutStyle">
 
             <FrameLayout
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/menu_item_height">
+                android:id="@+id/darkThemeFrameLayout"
+                style="@style/MenuItemFrameStyle">
 
                 <TextView
                     style="@style/MenuItemTextViewStyle"
@@ -42,18 +47,17 @@
 
                 <Switch
                     android:id="@+id/theme_switch"
-                    style="@style/SwitchStyle"
-                    android:layout_width="@dimen/big_icon_size" />
+                    style="@style/SwitchStyle"/>
+
             </FrameLayout>
 
             <FrameLayout
                 android:id="@+id/shareFrameLayout"
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/menu_item_height">
+                style="@style/MenuItemFrameStyle">
 
                 <TextView
                     style="@style/MenuItemTextViewStyle"
-                    android:text="@string/share_title"/>
+                    android:text="@string/share_title" />
 
                 <ImageView
                     style="@style/MenuItemIconImageViewStyle"
@@ -62,12 +66,11 @@
 
             <FrameLayout
                 android:id="@+id/writeToSupportFrameLayout"
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/menu_item_height">
+                style="@style/MenuItemFrameStyle">
 
                 <TextView
                     style="@style/MenuItemTextViewStyle"
-                    android:text="@string/write_to_support_title"/>
+                    android:text="@string/write_to_support_title" />
 
                 <ImageView
                     style="@style/MenuItemIconImageViewStyle"
@@ -76,22 +79,21 @@
 
             <FrameLayout
                 android:id="@+id/userAgreementFrameLayout"
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/menu_item_height">
+                style="@style/MenuItemFrameStyle">
 
                 <TextView
                     style="@style/MenuItemTextViewStyle"
-                    android:text="@string/user_agreement_title"/>
+                    android:text="@string/user_agreement_title" />
 
                 <ImageView
                     style="@style/MenuItemIconImageViewStyle"
                     android:src="@drawable/arrow_forward" />
             </FrameLayout>
 
-
         </LinearLayout>
 
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+
 

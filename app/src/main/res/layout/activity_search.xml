@@ -1,58 +1,49 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
+    android:id="@+id/search"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".SearchActivity">
 
     <LinearLayout
+        style="@style/otherActivityLinearLayoutStyle"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:padding="0dp">
+        android:layout_height="match_parent">
 
-        <FrameLayout
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/header_layout_size">
+        <LinearLayout style="@style/HeaderLinearLayoutStyle">
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal"
-                android:padding="@dimen/padding_small">
+            <FrameLayout
+                android:id="@+id/return_frame"
+                style="@style/HeaderImageFrameStyle">
 
-                <FrameLayout
-                    style="@style/HeaderFrameStyle">
+                <ImageView
+                    android:id="@+id/return_image"
+                    style="@style/ArrowBackImageViewStyle" />
 
-                    <ImageView
-                        android:id="@+id/return_image"
-                        style="@style/ArrowBackImageViewStyle" />
+            </FrameLayout>
 
-                </FrameLayout>
+            <FrameLayout style="@style/HeaderFrameStyle">
 
-                <FrameLayout
-                    style="@style/HeaderFrameStyle"
-                    android:layout_width="match_parent"
-                    android:paddingTop="@dimen/header_text_padding_top">
+                <TextView
+                    style="@style/HeaderTextViewStyle"
+                    android:text="@string/search_title" />
 
-                    <TextView
-                        style="@style/HeaderTextViewStyle"
-                        android:text="@string/search_title" />
+            </FrameLayout>
 
-                </FrameLayout>
+        </LinearLayout>
 
-            </LinearLayout>
 
-        </FrameLayout>
-
-        <FrameLayout
-            style="@style/SearchFrameStyle">
+        <FrameLayout style="@style/SearchFrameStyle">
 
             <EditText
-                android:theme="@style/Theme.PlaylistMaker.SearchEditTexts"
                 android:id="@+id/search_editText"
-                style="@style/SearchEditTextStyle"/>
+                style="@style/SearchEditTextStyle" />
+
+            <ImageView
+                android:id="@+id/search_clear_imageView"
+                style="@style/ClearImageViewStyle" />
         </FrameLayout>
 
     </LinearLayout>
