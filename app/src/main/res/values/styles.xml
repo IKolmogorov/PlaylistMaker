@@ -40,8 +40,8 @@
         <item name="android:layout_width">@dimen/big_icon_size</item>
         <item name="android:layout_height">match_parent</item>
         <item name="android:layout_gravity">end</item>
-        <item name="android:thumbTint">?attr/thumbTint</item>
-        <item name="android:trackTint">?attr/trackTint</item>
+        <item name="android:thumbTint">?attr/switcherThumbTint</item>
+        <item name="android:trackTint">?attr/switcherTrackTint</item>
     </style>
     <style name="MenuItemsLinearLayoutStyle">
         <item name="android:layout_width">match_parent</item>

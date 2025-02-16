@@ -47,7 +47,7 @@
 
                 <Switch
                     android:id="@+id/theme_switch"
-                    style="@style/SwitchStyle"/>
+                    style="@style/SwitchStyle" />
 
             </FrameLayout>
 

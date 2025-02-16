@@ -32,11 +32,6 @@ class SearchActivity : AppCompatActivity() {
         val searchEditText = findViewById<EditText>(R.id.search_editText)
         val clearButton = findViewById<ImageView>(R.id.search_clear_imageView)
 
-//        if (savedInstanceState != null) {
-//            searchedText = savedInstanceState.getString(SEARCHED_TEXT_KEY, EMPTY_TEXT)
-//            searchEditText.setText(searchedText)
-//        }
-
         clearButton.visibility = clearButtonVisibility(searchEditText.text)
 
         returnFrameLayout.setOnClickListener {
