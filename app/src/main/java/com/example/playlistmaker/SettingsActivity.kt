@@ -24,6 +24,7 @@ class SettingsActivity : AppCompatActivity() {
 
         returnFrameLayout.setOnClickListener {
             val displayIntent = Intent(this, MainActivity::class.java)
+            displayIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_SINGLE_TOP);
             startActivity(displayIntent)
         }
 

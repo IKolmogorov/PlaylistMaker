@@ -26,8 +26,6 @@
             android:exported="false" />
         <activity
             android:name=".SearchActivity"
-            android:parentActivityName=".MainActivity"
-            android:launchMode="singleTop"
             android:exported="false" />
         <activity
             android:name=".SettingsActivity"
