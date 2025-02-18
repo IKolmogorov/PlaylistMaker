@@ -8,7 +8,7 @@
     <string name="write_to_support_title">Написать в поддержку</string>
     <string name="user_agreement_title">Пользовательское соглашение</string>
 
-    <string name="share_body">Привет, Android-разработка — это круто!</string>
+    <string name="share_body">Ссылка на курс по Android-разработке на Яндекс.Практикум: https://practicum.yandex.ru/android-developer/</string>
 
     <string name="write_to_support_subject">Сообщение разработчикам приложения Playlist Maker</string>
     <string name="write_to_support_body">Спасибо разработчикам за крутое приложение!</string>
