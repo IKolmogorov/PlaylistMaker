@@ -1,11 +1,8 @@
 package com.example.playlistmaker
 
-import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
-import android.view.View
 import android.widget.Button
-import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -35,8 +32,8 @@ class MainActivity : AppCompatActivity() {
             startActivity(displayIntent)
         }
 
-        val settings_button = findViewById<Button>(R.id.open_settings)
-        settings_button.setOnClickListener {
+        val settingsButton = findViewById<Button>(R.id.open_settings)
+        settingsButton.setOnClickListener {
             val displayIntent = Intent(this, SettingsActivity::class.java)
             startActivity(displayIntent)
         }
