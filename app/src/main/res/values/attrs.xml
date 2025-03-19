@@ -19,4 +19,6 @@
     <attr name="searchResultMainTextColor" format="color" />
     <attr name="searchResultAdditionalTextColor" format="color" />
 
+    <attr name="searchErrorNoResultsDrawable" format="reference" />
+
 </resources>
