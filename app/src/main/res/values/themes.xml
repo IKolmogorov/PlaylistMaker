@@ -31,11 +31,5 @@
         <item name="editTextDrawableTint">@color/gray</item>
         <item name="editTextBackgroundDrawable">@drawable/rounded_edittext</item>
 
-        <!-- Search result attributes -->
-        <item name="dotColor">@color/gray</item>
-        <item name="arrowColor">@color/gray</item>
-        <item name="searchResultMainTextColor">@color/black</item>
-        <item name="searchResultAdditionalTextColor">@color/gray</item>
-
     </style>
 </resources>
