@@ -53,10 +53,6 @@ dependencies {
     androidTestImplementation(libs.androidx.espresso.core)
 
     //Glide
-    implementation(libs.glide)
-    annotationProcessor(libs.compiler)
-
-    //Retrofit
-    implementation(libs.retrofit)
-    implementation(libs.converter.gson)
+    implementation("com.github.bumptech.glide:glide:4.14.2")
+    annotationProcessor("com.github.bumptech.glide:compiler:4.14.2")
 }

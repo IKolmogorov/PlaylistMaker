@@ -38,8 +38,6 @@
 
             <EditText
                 android:id="@+id/search_editText"
-                android:imeOptions="actionDone"
-                android:singleLine="true"
                 style="@style/SearchEditTextStyle" />
 
             <ImageView
@@ -56,21 +54,6 @@
                 android:id="@+id/trackList"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent" />
-
-            <FrameLayout
-                android:id="@+id/search_placeholder"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:visibility="gone">
-
-                <ImageView
-                    android:id="@+id/search_error_image"
-                    android:src="?attr/searchErrorNoResultsDrawable"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"/>
-
-            </FrameLayout>
         </FrameLayout>
 
     </LinearLayout>

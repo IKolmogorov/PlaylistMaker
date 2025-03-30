@@ -36,9 +36,6 @@
         <item name="arrowColor">@color/gray</item>
         <item name="searchResultMainTextColor">@color/black</item>
         <item name="searchResultAdditionalTextColor">@color/gray</item>
-        <item name="searchErrorNoResultsDrawable">@drawable/search_error_light_mode</item>
-
-
 
     </style>
 </resources>
