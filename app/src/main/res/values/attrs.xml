@@ -14,9 +14,4 @@
     <attr name="editTextDrawableTint" format="color" />
     <attr name="editTextBackgroundDrawable" format="reference" />
 
-    <attr name="dotColor" format="color" />
-    <attr name="arrowColor" format="color" />
-    <attr name="searchResultMainTextColor" format="color" />
-    <attr name="searchResultAdditionalTextColor" format="color" />
-
 </resources>
